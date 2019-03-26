@@ -1,6 +1,6 @@
-# Live2D demo
+﻿# Live2D demo
 
-Live2D 看板娘插件 (https://www.fghrsh.net/post/123.html) 的前端 HTML 源码
+Live2D 看板娘插件 (https://ymtonny.cn) 的前端 HTML 源码
 
 ### 特性
 
@@ -14,11 +14,7 @@ Live2D 看板娘插件 (https://www.fghrsh.net/post/123.html) 的前端 HTML 源
 ### 目录结构
 
 ```shell
-│  demo1-default.html       // 常规引用 Demo
-│  demo2-autoload.html      // autoload.js Demo
-│  demo3-waifu-tips.html    // 内置 waifu-tips Demo
-│
-└─assets
+assets
         autoload.js                     // 自动异步加载
         flat-ui-icons-regular.eot       // Flat UI 字体
         flat-ui-icons-regular.svg       // Flat UI 字体
@@ -30,7 +26,7 @@ Live2D 看板娘插件 (https://www.fghrsh.net/post/123.html) 的前端 HTML 源
         waifu.css                       // Live2D 看板娘 样式表
 ```
 
-### 食用方法
+### 使用方法
 
 - 依赖类库
   - JQuery (`waifu-tips.js`)
@@ -48,7 +44,7 @@ Live2D 看板娘插件 (https://www.fghrsh.net/post/123.html) 的前端 HTML 源
 
         · · ·   · · ·
 
-    <link rel="stylesheet" type="text/css" href="https://www.example.com/path/to/waifu.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/waifu.css"/>
 </head>
 <body>
 
@@ -74,7 +70,7 @@ Live2D 看板娘插件 (https://www.fghrsh.net/post/123.html) 的前端 HTML 源
     <script type="text/javascript">
         live2d_settings['modelId'] = 1;
         live2d_settings['modelTexturesId'] = 87;
-    	initModel("https://www.example.com/path/to/waifu-tips.json")
+    	initModel("assets/waifu-tips.json")
     </script>
 </body>
 </html>
@@ -86,7 +82,7 @@ Live2D 看板娘插件 (https://www.fghrsh.net/post/123.html) 的前端 HTML 源
 
 ```html
     · · ·   · · ·
-    <script src="path/to/autoload.js"></script>
+    <script src="assets/autoload.js"></script>
 </body>
 </html>
 ```
@@ -96,7 +92,7 @@ try {
     · · ·   · · ·
     live2d_settings['modelId'] = 1;
     live2d_settings['modelTexturesId'] = 87;
-    initModel('https://www.example.com/path/to/waifu-tips.json');
+    initModel('assets/waifu-tips.json');
 } catch(err) { console.log('[Error] JQuery is not defined.') }
 
 ```
@@ -187,18 +183,3 @@ try {
 - `"mouseover"` 鼠标触发提示（根据 CSS 选择器，支持多句随机）
 - `"click"` 鼠标点击触发提示（根据 CSS 选择器，支持多句随机）
 - `"seasons"` 节日提示（日期段，支持多句随机）
-
-## 版权声明
-
-> ( ˃ ˄ ˂̥̥ ) 都看到这了，点个 Star 吧 ~
-
-[Flat UI Free][1]  
-[live2d_src / ©journey-ad / GPL v2.0][2]  
-[waifu-tips.js / ©journey-ad / CC BY-NC-SA 4.0][3]  
-  
-Open sourced under the GPL v2.0 license.
-
-
-  [1]: https://designmodo.com/flat-free/ "Flat UI Free"
-  [2]: https://github.com/journey-ad/live2d_src "基于 #fea64e4 的修改版"
-  [3]: https://imjad.cn/ "猫与向日葵"

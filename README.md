@@ -1,6 +1,6 @@
 ﻿# Live2D demo
 
-Live2D 看板娘插件 (https://ymtonny.cn) 的前端 HTML 源码
+Live2D  (https://ymtonny.cn) 的前端 HTML 示例
 
 ### 特性
 

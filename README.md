@@ -64,8 +64,8 @@ assets
         </div>
     </div>
     
-    <script src="path/to/waifu-tips.js"></script>
-    <script src="path/to/live2d.js"></script>
+    <script src="assets/waifu-tips.js"></script>
+    <script src="assets/live2d.js"></script>
     
     <script type="text/javascript">
         live2d_settings['modelId'] = 1;
